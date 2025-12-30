@@ -1,0 +1,115 @@
+/* RESET BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: #000;
+    overflow: hidden;
+}
+
+/* SFONDO FUTURISTICO */
+.bg {
+  position: fixed; inset:0; z-index:-1;
+  background: linear-gradient(90deg, #091026, #0a2a3a, #1b0739);
+  background-size: 300% 300%;
+  animation: slowShift 18s ease infinite;
+}
+@keyframes slowShift {
+  0%{ background-position:0% 50%;}
+  50%{ background-position:100% 50%;}
+  100%{ background-position:0% 50%;}
+}
+
+
+/* CENTRATURA */
+.page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARD */
+.card {
+    width: 100%;
+    max-width: 380px;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 20px;
+    background: rgba(10, 12, 30, 0.9);
+    color: #fff;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0,255,255,0.3);
+}
+
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.bio {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 25px;
+}
+
+/* bottoni */
+.link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* spazio tra icona e testo */
+
+    margin-bottom: 12px;
+    padding: 14px;
+    border-radius: 14px; /* angoli arrotondati */
+
+    text-decoration: none;
+    font-weight: bold;
+
+    background: linear-gradient(135deg, #00ffff, #ff00ff);
+    color: #000;
+
+    transition: transform 0.2s, box-shadow 0.2s; /* animazioni */
+}
+
+.link-btn:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 20px rgba(255,0,255,0.8);
+}
+
+
+.link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    padding: 14px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    background: linear-gradient(135deg, #00ffff, #ff00ff);
+    color: #000;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.link-btn:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 20px rgba(255,0,255,0.8);
+}
